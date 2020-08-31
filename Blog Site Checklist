@@ -1,0 +1,57 @@
+Blog Site Checklist
+
+- Features
+    - [] Home screen overview showing blog post (date order)
+    - [] Create new blog post
+    - [] View single blog post
+    - [] Blog page with all blogs, search, filter and contents included (as per tutorial)
+
+- Layouts
+    - [*] Home/default screen Layout
+    - [] admin blog layout
+    - [] Single blog post Layout
+
+    * indefity re-used layout, including the head, header, nav, footer, wraper for all content
+
+
+- Components
+    - [] Home page blog post overview 
+    - [] Individual blog post component
+    - [] Core layout components (header, nav, footer)
+
+
+- Pages
+    - [] Home Page
+    - [] About Page
+    - [] Blogs page
+    - [] Single blog page (slug)
+
+
+    Things to consider 
+
+    - how to strcuture the navigation: pages, layouts or within Components
+    - Routing for about, home and single blog posts
+    - npm run generate to build the app in static (ssg)
+    - Understanding content module module for blog posts, slugs etc
+    - NUXT js folder directory: understand so I am devloping the blog in the correct structure 
+    - Componenet developement
+    - saving images in assets and applying to content module blog post
+    - indefity re-used layout, including the head, header, nav, footer, wraper for all content
+    - decide what is a page/route, layout or re-usuable component with no logic. Componenets with loigic are genrall page componenets
+
+DOCUMENTATION ON NUXT FILE STRUCTURE:
+    https://medium.com/free-code-camp/universal-application-code-structure-in-nuxt-js-4cd014cc0baa
+
+    https://chunkbytes.com/2019/04/understanding-the-nuxt-js-folder-structure-the-basics/
+
+    https://www.smashingmagazine.com/2020/04/getting-started-nuxt/
+
+
+NUXT BLOG SPECIFIC TUTORIALS:
+    https://vuedose.tips/creating-ui-components-based-on-a-design-system-in-vue-js/
+    https://nuxtjs.org/blog/creating-blog-with-nuxt-content
+    https://dev.to/lauragift21/build-a-blog-using-nuxt-js-content-module-37dc
+
+
+NUXT CONTENT MODULE DOCUMENTATION:
+    https://content.nuxtjs.org/fetching
