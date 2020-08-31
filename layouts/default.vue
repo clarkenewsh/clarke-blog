@@ -1,10 +1,28 @@
 <template>
-  <div class="container">
-    <Nuxt />
+  <div class="grid">
+    <header>
+      <Nav />
+    </header>
+    <main>
+      <Nuxt />
+    </main>
+    <Footer />
   </div>
 </template>
 
+<script>
+import Nav from '~/components/NavBar.vue'
+import Footer from '~/components/Footer.vue'
+export default {
+  components: {
+    Nav,
+    Footer
+  }
+}
+</script>
+
 <style>
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -25,42 +43,40 @@ html {
   margin: 0;
 }
 
-.container {
+.grid {
+  display: grid;
+  grid-template-columns: 1% 1fr 1%;
+  grid-column-gap: 1rem;
+  grid-row-gap: 3rem;
+}
+
+main {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #00C48D;
-  color: #00C48D;
-  text-decoration: none;
-  padding: 10px 30px;
-  display: inline-flex;
-  align-self: center;
+header, main, footer {
+  grid-column: 2;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #00C48D;
+footer {
+
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #2E495E;
-  color: #2E495E;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+@media only screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 3% 1fr 3%;
+  }
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #2E495E;
+@media only screen and (min-width: 1024px) {
+    .grid {
+      grid-template-columns: 6% 1fr 6%;
+  }
+ }
+
+@media only screen and (min-width: 1400px) {
+      .grid {
+      grid-template-columns: 15% 1fr 15%;
+  }
 }
 </style>
